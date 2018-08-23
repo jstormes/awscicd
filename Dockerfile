@@ -1,6 +1,5 @@
 FROM ubuntu
 
-#ENV DOCKER_HOST tcp://docker:2375/
 ENV PATH="/root/.local/bin:${PATH}"
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
