@@ -12,6 +12,7 @@ RUN apt-get update \
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py --user
 RUN pip install awscli --upgrade --user
+RUN pip install ecs-deploy --upgrade --user
 RUN aws --version
 
 
