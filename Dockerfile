@@ -2,6 +2,8 @@ FROM ubuntu
 
 #ENV DOCKER_HOST tcp://docker:2375/
 ENV PATH="/root/.local/bin:${PATH}"
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 RUN apt-get update \
     && apt-get install -y curl gnupg2 lsb-release software-properties-common python3-distutils \
